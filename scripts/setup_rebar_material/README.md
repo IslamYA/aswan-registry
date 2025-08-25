@@ -1,5 +1,5 @@
 # Setup Rebar Material Script
-=====================================
+-----------------------------
 
 This script generates a rebar material for use in Abaqus simulations.
 
