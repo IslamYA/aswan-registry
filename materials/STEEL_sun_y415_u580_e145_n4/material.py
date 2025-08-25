@@ -16,13 +16,13 @@ from connectorBehavior import *
 model = mdb.models.values()[0]
 
 # Create material
-material_name = 'STEEL_sun_y415_u580_e145_n4'
+material_name = "STEEL_sun_y415_u580_e145_n4"
 model.Material(name=material_name)
 material = model.materials[material_name]
 
 # Set material description
 material.setValues(
-    description='Steel material: yield=415 MPa, ultimate=580 MPa, E=204 GPa, density=7.8e-09 tonne/mm^3.'
+    description="Steel material: yield=415 MPa, ultimate=580 MPa, E=204 GPa, density=7.8e-09 tonne/mm^3."
 )
 
 # Define elastic properties
@@ -33,16 +33,16 @@ material.Elastic(
     noTension=OFF,
     table=((204000.0, 0.3),),
     temperatureDependency=OFF,
-    type=ISOTROPIC
+    type=ISOTROPIC,
 )
 
 # Define density
 material.Density(
     dependencies=0,
     distributionType=UNIFORM,
-    fieldName='',
+    fieldName="",
     table=((7.8e-09,),),
-    temperatureDependency=OFF
+    temperatureDependency=OFF,
 )
 
 # Define plastic properties
@@ -58,10 +58,10 @@ material.Plastic(
         (472.789062, 0.03329083),
         (533.56875, 0.06737684),
         (597.339062, 0.10030512),
-        (664.1, 0.13214924)
+        (664.1, 0.13214924),
     ),
-    temperatureDependency=OFF
+    temperatureDependency=OFF,
 )
 
 # Set material identifier
-material.setValues(materialIdentifier='')
+material.setValues(materialIdentifier="")
