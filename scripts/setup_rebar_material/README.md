@@ -53,7 +53,7 @@ The script generates a piecewise linear stress-strain curve with the following p
 
 The interpolation uses linear spacing in engineering stress domain:
 $$\sigma_{\text{eng}}(i) = \sigma_Y + \frac{i}{n_{\text{Points}}} \times (\sigma_U - \sigma_Y)$$
-$$\varepsilon_{\text{eng}}(i) = \frac{i}{n_{\text{Points}}} \times \varepsilon_{\text{fracture}}}$$
+$$\varepsilon_{\text{eng}}(i) = \frac{i}{n_{\text{Points}}} \times \varepsilon_{\text{fracture}}$$
 
 ## Output
 
