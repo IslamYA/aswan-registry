@@ -49,7 +49,7 @@ The script generates a piecewise linear stress-strain curve with the following p
 
 1. **Yield Point**: $(\sigma_y, 0.0)$ - where plastic strain begins
 2. **Interpolated Points**: $n_{\text{Points}}$ evenly spaced points between yield and ultimate strength
-3. **Ultimate Point**: $(\sigma_{\text{true}_U}, \varepsilon_{\text{plastic}_U})$ - calculated at fracture strain
+3. **Ultimate Point**: $(\sigma_{\text{true},U}, \varepsilon_{\text{plastic},U})$ - calculated at fracture strain
 
 The interpolation uses linear spacing in engineering stress domain:
 $$\sigma_{\text{eng}}(i) = \sigma_Y + \frac{i}{n_{\text{Points}}} \times (\sigma_U - \sigma_Y)$$
